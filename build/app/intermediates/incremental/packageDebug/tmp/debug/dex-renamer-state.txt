@@ -1,4 +1,4 @@
-#Tue Oct 16 16:21:20 MYT 2018
+#Tue Oct 16 17:31:48 MYT 2018
 base.0=/home/hafiz/Desktop/daily_fotia/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

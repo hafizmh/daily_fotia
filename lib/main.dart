@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'register_page.dart';
 import 'login_page.dart';
 import 'home_page.dart';
 
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
     LoginPage.tag: (context) => LoginPage(),
     HomePage.tag: (context) => HomePage(),
+    RegisterPage.tag: (context) => RegisterPage(),
   };
 
   @override

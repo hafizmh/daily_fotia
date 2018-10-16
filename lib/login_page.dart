@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_drive/home_page.dart';
-// import 'package:login/home_page.dart';
+import 'home_page.dart';
+import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -68,6 +68,16 @@ class _LoginPageState extends State<LoginPage> {
       onPressed: () {},
     );
 
+    final signUp = FlatButton(
+      child: Text(
+        'Sign Up',
+         style: TextStyle(color: Colors.black54),
+      ),
+      onPressed: (){
+        Navigator.of(context).pushNamed(RegisterPage.tag);
+      },
+    );
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
@@ -82,7 +92,8 @@ class _LoginPageState extends State<LoginPage> {
             password,
             SizedBox(height: 24.0),
             loginButton,
-            forgotLabel
+            forgotLabel,
+            signUp,
           ],
         ),
       ),
